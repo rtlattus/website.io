@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Research</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+  <style>
+    /* Custom Navbar Styles */
+    .navbar {
+      background-color: #3f4044 !important; /* Dark gray */
+    }
 
+    .navbar a.navbar-brand, .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .navbar a.navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #fa4616 !important; /* Red-orange on hover */
+    }
+  </style>
+</head>
+
+
+<body>
 <!-- A grey horizontal navbar that becomes vertical on small screens -->
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
-      Home
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" title="Menu">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -26,93 +43,41 @@
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="research.html">Research</a>
+          <a class="nav-link active" href="#">Research</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="test-cv.pdf">CV</a>
+          <a class="nav-link" href="cv.pdf">CV</a>
         </li> 
       </ul>
     </div>
   </div>
 </nav>
 
-<div class = "container-fluid p-4">
-  <h1 class="">List of Research</h1>
+<div class = "container-fluid p-4" style="max-width:900px;">
+  <!-- <h1>List of Research</h1> -->
 
-  Here are my active and published research projects.
+  <!-- <h3> Publications </h3> -->
 
-  <h2 class="text-center mt-4">Publications</h2>
+  <h3>Research Papers</h3>
 
-  <div class="row row-cols-1 row-cols-md-3">
+  <p>
+    <a href="https://keep.lib.asu.edu/items/161220" class="maroon-link">
+      Characterizing the Performance of Machine Learning Algorithms: A Study and Novel Techniques
+    </a>
+     <strong>Lattus, Robert</strong> (2021)
+  </p>
+  <p>
+    <em>Barrett, the Honors College Thesis<em/>
+  </p>
+  <p style="margin-left: 20px; font-size: 0.9em;">
+    <strong>Abstract:</strong> classification in machine learning is quite crucial to solve many problems that the world is presented with today. Therefore, it is key to understand one's problem and develop an efficient model to achieve a solution. One technique to achieve greater model selection and thus further ease in problem solving is estimation of the Bayes Error Rate. This paper provides the development and analysis of two methods used to estimate the Bayes Error Rate on a given set of data to evaluate performance. The first method takes a "global" approach, looking at the data as a whole, and the second is more "local"--partitioning the data at the outset and then building up to estimation of the three Bayes Error Rate when the dataset is at high dimension, while the other method provides accurate estimation at large sample size. This second conclusion, in particular, can have signification ramifications of "big data" problems, as one would be able to clarify the distribution with an accurate estimation of the Bayes Error Rate by using this method.
+  </p>
 
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <h2 class="text-center mt-4">Work in Progress</h2>
-
-  <div class="row row-cols-1 row-cols-md-3">
-
-    <div class="col mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
+  <h3>Works in Progress</h3>
+  
+  <p>The Effects of Interest Rate Risk Hedging by Non-financial Firms on Monetary Policy Transmission (2025) </p>
+  
+  <p>Labor Market Demand and Monetary Information Shocks (2024) | with Amy Handlan and Ross Batzer  </p>
 </div>
 
 </body>
